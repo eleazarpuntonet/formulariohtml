@@ -35,13 +35,20 @@
                                     Tipo Persona:
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" value="option1" checked>
+                                    <input
+                                        name  = "tipo_per_natural" 
+                                        class = "form-check-input" 
+                                        type  = "radio" 
+                                        checked>
                                     <label class="form-check-label" for="exampleRadios1">
                                       Persona Natural
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" value="option2">
+                                    <input 
+                                        name  = "tipo_per_juridica" 
+                                        class = "form-check-input" 
+                                        type  = "radio">
                                     <label class="form-check-label" for="exampleRadios2">
                                       Persona Jurìdica
                                     </label>
@@ -49,7 +56,11 @@
                             </div>
                             <div class="col-6 col-md-6 col-sm-12 tipo_doc">
                                 <div id="tipo_documento" class="input-group mb-3">
-                                    <select class="form-select no-border bottom_line font_bold" placeholder="Tipo Documento">
+                                    <select
+                                        type        = "select"
+                                        name        = "tipo_documento" 
+                                        class       = "form-select no-border bottom_line font_bold" 
+                                        placeholder = "Tipo Documento">
                                         <option value="V">V</option>
                                         <option value="E">E</option>
                                         <option value="J">J</option>
@@ -60,14 +71,20 @@
                             <div class="col-6 col-md-6 col-sm-12">
                                 <div class="mb-3">
                                     <input
-                                        placeholder="Nombre Completo" 
-                                        type="text" 
-                                        class="form-control no-border bottom_line" 
-                                        id="nombreInput">
+                                        name        = "nombre"
+                                        placeholder = "Nombre Completo" 
+                                        type        = "text" 
+                                        class       = "form-control no-border bottom_line" 
+                                        id          = "nombreInput">
                                 </div>                        
                             </div>
                             <div class="col-6 col-md-6 col-sm-12">
-                                <select id="estadoInput" class="form-select no-border bottom_line font_bold" placeholder="Estado">
+                                <select 
+                                    name        = "estado"
+                                    type        = "select"
+                                    id          = "estadoInput" 
+                                    class       = "form-select no-border bottom_line font_bold" 
+                                    placeholder = "Estado">
                                     <option selected>Estado</option>
                                     <option value="1">Distrito Capital</option>
                                     <option value="2">Miranda</option>
@@ -78,7 +95,12 @@
                                 </select>                                                
                             </div>
                             <div class="col-6 col-md-6 col-sm-12">
-                                <select id="ciudadInput" placeholder="Ciudad" class="form-select no-border bottom_line font_bold">
+                                <select
+                                    name        = "ciudad" 
+                                    type        = "select"
+                                    id          = "ciudadInput" 
+                                    placeholder = "Ciudad" 
+                                    class       = "form-select no-border bottom_line font_bold">
                                     <option selected>Ciudad</option>
                                     <option value="1">Caracas</option>
                                     <option value="2">Lecheria</option>
@@ -88,17 +110,30 @@
                             </div>
                             <div class="col-12 ">
                                 <div class="mb-3">
-                                    <input type="email" class="form-control no-border bottom_line" id="direccionInput" placeholder="Direcciòn">
+                                    <input 
+                                        name        = "direccion"
+                                        type        = "text" 
+                                        class       = "form-control no-border bottom_line" 
+                                        id          = "direccionInput" 
+                                        placeholder = "Direcciòn">
                                 </div>                                                
                             </div>
                             <div class="col-6 col-md-6 col-sm-12">
                                 <div class="mb-3">
-                                    <input type="email" class="form-control no-border bottom_line" id="emailInput" placeholder="Email">
+                                    <input 
+                                        name        = "email"
+                                        type        = "email" 
+                                        class       = "form-control no-border bottom_line" 
+                                        id          = "emailInput" 
+                                        placeholder = "Email">
                                 </div>                                                
                             </div>
                             <div class="col-6 col-md-6 col-sm-12 telefono_group">
                                 <div id="telefonoInput" class="input-group mb-3" placeholder="Telèfono">
-                                    <select class="form-select no-border bottom_line">
+                                    <select
+                                        name  = "prefijo" 
+                                        type  = "select"
+                                        class = "form-select no-border bottom_line">
                                         <option selected>Prefijo</option>
                                         <option value="V">0424</option>
                                         <option value="V">0414</option>
@@ -106,10 +141,13 @@
                                         <option value="J">0416</option>
                                         <option value="J">0426</option>
                                     </select> 
-                                    <input type="text" placeholder="Nro de Telefono" class="form-control no-border bottom_line">
+                                    <input
+                                        name        = "numero_telefono" 
+                                        type        = "text" 
+                                        placeholder = "Nro de Telefono" 
+                                        class       = "form-control no-border bottom_line">
                                 </div>                                           
                             </div>
-                            
                         </div>
                     </div>
                     <div class="col-12">
